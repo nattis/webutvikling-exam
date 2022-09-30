@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <title>YouzClothes | Universell Utforming og Teknisk Implementasjon av Sosiale Medier</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/site.css">
+
+        <!--bibliotek for sosiale medier knapper og hamburgermenyen-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="tilgjengelighet, universell utforming, sosiale medier, facebook, twitter">
+        <meta name="description" content="Analyse av nettsidens universelle utforming og teknisk implementasjon av sosiale medier">
+        
+        <!--Facebook meta tag-->
+        <meta property="og:url" content="#">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="YouzClothes - Universell Utforming og Teknisk Implementasjon av Sosiale Medier">
+        <meta property="og:description" content="Analyse av YouzClothes sin tilgjengelighet, og teknisk implementasjon av sosiale medier">
+        <meta property="og:image" content="#">
+
+        <!--Twitter meta tag-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="itstud.hiof.no">
+        <meta property="twitter:url" content="#">
+        <meta name="twitter:title" content="YouzClothes - Universell Utforming og Teknisk Implementasjon av Sosiale Medier">
+        <meta name="twitter:description" content="Analyse av YouzClothes sin tilgjengelighet, og teknisk implementasjon av sosiale medier">
+        <meta name="twitter:image" content="#">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>YouzClothes</h1>
+            <p lang="en">Unique clothing store online</p>
+        </header>
+
+        <nav>
+            <ul class="meny">
+                <li class="liste"><a href="index.html">Hjem</a></li>
+                <li class="liste"><a href="shop.html">Shop</a></li>
+                <li class="liste"><a href="kontakt.html">Kontakt</a></li>
+                <li class="liste"><a href="plan.html">Universell Utforming</a></li>
+                <li class="liste"><a href="seo.html">SEO</a></li>
+                <li class="liste"><a href="wireframe.html">Wireframes</a></li>
+                <li class="hamburger"><a href="#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+            
+            <a href="index.html"><img id="StorLogo" src="../522/img/StorLogo.png" alt="logo til YouzClothes"></a>
+        </nav>
+
+        <main>
+            
+            <section tabindex="0">
+                <h2 class="heading">Universell utforming og sosiale medier</h2>
+                <article>
+                    <h3>Universell utforming</h3>
+                    <p>Når man utvikler en nettside slik som denne er det viktig at alle skal kunne benytte den. Uansett hvilke hindringer som kan stå i veien. Kanskje brukeren av nettsiden er blind eller svaksynt, utvikleren burde da tilrettelegge slik at de med hindringer også skal få bruke siden på samme grunnlag som de uten hindringer. Dette kalles universell utforming. YouzClothes formål er å få kunder til sin nettbutikk, de burde derfor gjøre det slik at alle skal få handle på lik linje. Dersom de da legger til en del tiltak, vil de få flere besøkere, og de vil da få bedre rangering i søkemotorene. Dette vil igjen øke antall besøk nettsiden får. Mer om søkemotoroptimalisering for denne nettsiden kan du lese <a href="seo.html">her</a>.</p>
+                    <p>Vi skal nå ta en nærmere titt på det som har blitt gjort for å legge til den universelle utformingen. Det første jeg gjorde da jeg startet med å lage nettsiden, var å sette et språk. Jeg valgte å bruke norsk (bokmål), men jeg har lagt til engelsk som språk enkelte steder. Dette blant annet der hvor slogan til nettbutikken står, da denne er skrevet på engelsk. Språket er satt i koden, og er et av kravene etter WCAG-2.0 standarden.</p>
+                    <p>Videre så jeg på kontrastfarger. Minimumskravet er at kontrastforholdet mellom tekst og bakgrunn er 4.5:1. På nettstedet har jeg valgt å bruke svart tekst mot hvit eller grå bakgrunn. Kontrastforholdene testet jeg på <a href="https://webaim.org/resources/contrastchecker/">WebAIM</a> og de ble da 21:1 der hvor svart var mot hvit, og 15.31:1 der svart var mot grå. Dette er dermed godkjent etter standarden. </p>
+                    <p>Neste jeg så på var hvordan brukeren kunne navigere seg rundt på nettsiden kun ved hjelp av tastatur. Når jeg sjekket dette sjekket jeg også om navigeringen var konsekvent. Det vil si at når jeg trykket på tab på tastaturet så sjekket jeg om den hoppet videre til navigasjonslinkene i riktig rekkefølge. Det gjorde den. Jeg valgte å endre slik at når brukeren trykker på tab så vil også hovedinnholdet markeres, noe som vil gjøre det lettere for dem med skjermleser, ettersom man da kan lett gå videre til innholdet. Da la jeg inn tabindex lik null der hvor jeg anså det som viktigst. Jeg valgte også å gjøre det tydeligere hvor man var, når man hadde nådd det innholdet man ville interagere med. Dette gjorde jeg ved hjelp av «:focus» i css. Dette vil i seg gjøre brukeropplevelsen mye bedre for mange. </p>
+                    <p>Når det kommer til bruk av skjermleser så har jeg testet dette ved hjelp av programmet til NV Access kalt NVDA. Da jeg lastet ned programmet og testet det på nettstedet mitt fungerte det ganske bra. Den leste opp det jeg holdt over, det fungerte også bra i forhold til tastaturbruk på grunn av tabindex som jeg la inn. Når jeg da trykker på «tab», hopper skjermleseren videre til innholdet «tab» er på, og innholdet blir da lest opp. </p>
+                </article>
+
+                <article>
+                    <h3>Teknisk implementasjon av sosiale medier</h3>
+                    <p>Sosiale medier er essensielt for å få besøkere til nettstedet man har utviklet, dette er fordi det er så mange som bruker de ulike sosiale mediene hver dag. Hvordan innholdet da blir fremstilt her er derfor veldig viktig, da man kan lokke til seg flere besøkere, og dermed få høyere rangering i søkemotorene. For å fremstille nettsiden min på en pen måte, har jeg derfor fulgt Open Graph Protocol og lagt til metadata. Dette blir lagt til i head-tagen, facebook følger opengraph, noe twitter også gjør, men de har sin egen versjon av det. Derfor måtte jeg derfor lage en for facebook og en for twitter. Der koden ber om navn på domene har jeg valgt å skrive inn hiof sin. Der hvor url og bilde skal skrives inn har jeg bare lagt til tekst for å vise her. Koden vil da se slik ut: 
+                       
+                        <br><br><code> 
+                            &lt;!--Facebook meta tag--&gt;
+                            <br>
+                            &lt;meta property="og:url" content="link til nettstedet"&gt;
+                            <br>
+                            &lt;meta property="og:type" content="website"&gt;
+                            <br>
+                            &lt;meta property="og:title" content="YouzClothes - Universell Utforming og Teknisk Implementasjon av Sosiale Medier"&gt;
+                            <br>
+                            &lt;meta property="og:description" content="Analyse av YouzClothes sin tilgjengelighet, og teknisk implementasjon av sosiale medier"&gt;
+                            <br>
+                            &lt;meta property="og:image" content="link til ønsket bilde som skal vises"&gt;
+                            <br>
+                            <br>
+                    
+                            &lt;!--Twitter meta tag--&gt;
+                            <br>
+                            &lt;meta name="twitter:card" content="summary_large_image"&gt;
+                            <br>
+                            &lt;meta property="twitter:domain" content="itstud.hiof.no"&gt;
+                            <br>
+                            &lt;meta property="twitter:url" content="link til nettstedet"&gt;
+                            <br>
+                            &lt;meta name="twitter:title" content="YouzClothes - Universell Utforming og Teknisk Implementasjon av Sosiale Medier"&gt;
+                            <br>
+                            &lt;meta name="twitter:description" content="Analyse av YouzClothes sin tilgjengelighet, og teknisk implementasjon av sosiale medier"&gt;
+                            <br>
+                            &lt;meta name="twitter:image" content="link til ønsket bilde som skal vises"&gt;
+                        </code>
+                    </p>
+                </article>
+            </section>
+            
+        </main>
+
+        <footer>
+            <section>
+                <h3>Kontakt oss:</h3>
+                <p>Kundeservice tlfnr: 88 88 88 88</p>
+                <p>Kundeservice åpningstider: Man-Fre 10:00 - 16:30</p>
+                <p>Postadresse: Adressevei 90E, 1783 Halden, Norge</p>
+            </section>
+                
+            <section>
+                <h3>Sosiale medier:</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </section>
+        </footer>
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const meny = document.querySelector(".meny");
+            const lister = document.querySelectorAll(".liste");
+
+            /*Hamburger meny*/
+            function hamburgerMeny() {
+            if (meny.classList.contains("active")) {
+                meny.classList.remove("active");
+                hamburger.querySelector("a").innerHTML = "<i class='fa fa-bars'></i>";
+            } else {
+                meny.classList.add("active");
+                hamburger.querySelector("a").innerHTML = "<i class='fa fa-times'></i>";
+            }
+            }
+
+            hamburger.addEventListener("click", hamburgerMeny, false);
+        </script>
+    </body>
+</html>

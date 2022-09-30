@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <title>YouzClothes | Kontakt oss</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/site.css">
+
+        <!--bibliotek for sosiale medier knapper og hamburgermenyen-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="klær, clothing, store, butikk, kontakt">
+        <meta name="description" content="Contact us here">
+    </head>
+
+    <body>
+        <header>
+            <h1>YouzClothes</h1>
+            <p lang="en">Unique clothing store online</p>
+        </header>
+
+        <nav>
+            <ul class="meny">
+                <li class="liste"><a href="index.html">Hjem</a></li>
+                <li class="liste"><a href="shop.html">Shop</a></li>
+                <li class="liste"><a href="kontakt.html">Kontakt</a></li>
+                <li class="liste"><a href="plan.html">Universell Utforming</a></li>
+                <li class="liste"><a href="seo.html">SEO</a></li>
+                <li class="liste"><a href="wireframe.html">Wireframes</a></li>
+                <li class="hamburger"><a href="#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+            
+            <a href="index.html"><img id="StorLogo" src="../522/img/StorLogo.png" alt="logo til YouzClothes"></a>
+        </nav>
+
+        <main tabindex="0">
+            <h2>Kontakt oss:</h2>
+            <section>
+                <h3>YouzClothes</h3>
+                <p>Adresse: Adressevei 90E, 1783 Halden, Norge</p>
+                <p>Telefon Kundeservice: 88 88 88 88</p>
+                <p>Åpningstider Kundeservice: Man-Fre 10:00 - 16:30</p>
+            </section>
+
+            <h2>Kontaktpersoner:</h2>
+            <section class="kontaktprs">
+                <article>
+                    <h3>Mona Mon Monaersen</h3>
+                    <img class="kontaktperson" src="../522/img/KontaktPerson1.png" alt="svart avatar">
+                    <p>Stilling: CEO</p>
+                    <p>Tlf nr: 00 00 00 00</p>
+                    <p>Email: MonaMonMonaersen@fakeemail.no</p>
+                </article>
+
+                <article>
+                    <h3>Anders And Andersen</h3>
+                    <img class="kontaktperson" src="../522/img/KontaktPerson2.png" alt="svart avatar">
+                    <p>Stilling: Markedsfører</p>
+                    <p>Tlf nr: 00 00 00 00</p>
+                    <p>Email: AndersAndAndersen@fakeemail.no</p>
+                </article>
+
+                <article>
+                    <h3>Børre Børresen</h3>
+                    <img class="kontaktperson" src="../522/img/KontaktPerson3.png" alt="svart avatar">
+                    <p>Stilling: Markedsfører</p>
+                    <p>Tlf nr: 00 00 00 00</p>
+                    <p>Email: BørreBørresen@fakeemail.no</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <h3>Kontakt oss:</h3>
+                <p>Kundeservice tlfnr: 88 88 88 88</p>
+                <p>Kundeservice åpningstider: Man-Fre 10:00 - 16:30</p>
+                <p>Postadresse: Adressevei 90E, 1783 Halden, Norge</p>
+            </section>
+                
+            <section>
+                <h3>Sosiale medier:</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </section>
+        </footer>
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const meny = document.querySelector(".meny");
+            const lister = document.querySelectorAll(".liste");
+
+            /*Hamburger meny*/
+            function hamburgerMeny() {
+            if (meny.classList.contains("active")) {
+                meny.classList.remove("active");
+                hamburger.querySelector("a").innerHTML = "<i class='fa fa-bars'></i>";
+            } else {
+                meny.classList.add("active");
+                hamburger.querySelector("a").innerHTML = "<i class='fa fa-times'></i>";
+            }
+            }
+
+            hamburger.addEventListener("click", hamburgerMeny, false);
+        </script>
+    </body>
+</html>
+ 

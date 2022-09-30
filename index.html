@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <title>YouzClothes | Unique Clothing Store Online</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--bibliotek for sosiale medier knapper og hamburgermenyen-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="klær, clothing, store, butikk">
+        <meta name="description" content="Unik klesbutikk på nett">
+    </head>
+
+    <body>
+        <header>
+            <h1>YouzClothes</h1>
+            <p lang="en">Unique clothing store online</p>
+        </header>
+
+        <nav>
+            <ul class="meny">
+                <li class="liste"><a href="index.html">Hjem</a></li>
+                <li class="liste"><a href="shop.html">Shop</a></li>
+                <li class="liste"><a href="kontakt.html">Kontakt</a></li>
+                <li class="liste"><a href="plan.html">Universell Utforming</a></li>
+                <li class="liste"><a href="seo.html">SEO</a></li>
+                <li class="liste"><a href="wireframe.html">Wireframes</a></li>
+                <li class="hamburger"><a href="#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+            
+            <a href="index.html"><img id="StorLogo" src="../522/img/StorLogo.png" alt="logo til YouzClothes"></a>
+        </nav>
+ 
+        <main tabindex="0">
+            <h2>Lorem Ipsum</h2>
+            <section class="seksjon">
+                <article class="text-container">
+                    <h3>Adipiscing Bibendum</h3>
+                    <p>Vestibulum id pretium nisi. Curabitur auctor mattis dolor, et gravida tellus convallis eget. Duis tellus felis, tincidunt eu consequat nec, auctor vitae nibh. Suspendisse fermentum erat leo, aliquet venenatis sapien lacinia eu. Nullam et finibus quam. Etiam tincidunt nunc ac egestas mattis. Donec vel arcu id tortor venenatis dapibus non eu leo. Maecenas ultrices tempus erat, consequat condimentum enim ultrices id. Nunc eget nisl turpis. Proin faucibus elit eget facilisis semper. In vel odio consequat mi posuere viverra at id nisl. Praesent eget sagittis erat. </p>
+                </article>
+                <img src="../522/img/seksjon1.jpg" alt="klær som henger på et stativ">
+            </section>
+
+            <section class="seksjon">
+                <article class="text-container">
+                    <h3>Lacus Suspendisse</h3>
+                    <p>Donec commodo nulla vitae lorem aliquet, ut volutpat justo accumsan. Vivamus placerat viverra risus, hendrerit faucibus leo rhoncus eget. Pellentesque et enim ultrices, tempor orci a, fermentum velit. Sed aliquet justo id urna laoreet, nec molestie lacus laoreet. Donec ultrices ipsum in urna tempor, faucibus mollis lacus laoreet. Donec lacinia dui auctor tellus tincidunt volutpat. Duis dictum, erat quis sagittis facilisis, eros nibh finibus sapien, at facilisis nulla massa vel turpis. Ut faucibus congue nisl a ornare. Praesent auctor magna ac odio elementum, et elementum nisl ultricies. Vivamus quis maximus nisi. Phasellus pretium ante turpis, eu dapibus nisl mollis vitae. Vestibulum at elit feugiat, venenatis nisi in, congue nibh. Quisque non scelerisque est. </p>
+                </article>
+                <img src="../522/img/seksjon2.jpg" alt="plante i forgrunnen, klær på stativ i bakgrunnen">
+            </section>
+
+            <section class="seksjon">
+                <article class="text-container">
+                    <h3>Enim Tortor</h3>
+                    <p>Phasellus vel suscipit tellus. Morbi sed lacus quis massa ornare pellentesque. Proin at ornare enim. Morbi porttitor diam leo, eu bibendum est iaculis non. Curabitur augue nisi, interdum et erat ac, aliquam tempus elit. Cras aliquam sagittis suscipit. Integer pretium leo eu justo sagittis, eu consequat velit volutpat. Etiam lorem velit, vulputate sed dignissim non, pretium vitae elit. Etiam dolor tellus, pharetra id diam ac, consequat mollis arcu. Proin sed magna eget sapien ultrices rhoncus. Ut hendrerit lorem et nibh blandit, ac condimentum elit euismod. Donec egestas elit vitae nulla molestie vestibulum. </p>
+                </article>
+                <img src="../522/img/seksjon3.jpg" alt="planter og klær som henger på stativ">
+            </section> 
+
+        </main>
+
+        <footer>
+            <section>
+                <h3>Kontakt oss:</h3>
+                <p>Kundeservice tlfnr: 88 88 88 88</p>
+                <p>Kundeservice åpningstider: Man-Fre 10:00 - 16:30</p>
+                <p>Postadresse: Adressevei 90E, 1783 Halden, Norge</p>
+            </section>
+                
+            <section>
+                <h3>Sosiale medier:</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </section>
+        </footer>
+
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const meny = document.querySelector(".meny");
+            const lister = document.querySelectorAll(".liste");
+
+            /* Hamburger meny */
+            function hamburgerMeny() {
+            if (meny.classList.contains("active")) {
+                meny.classList.remove("active");
+                hamburger.querySelector("a").innerHTML = "<i class='fa fa-bars'></i>";
+            } else {
+                meny.classList.add("active");
+                hamburger.querySelector("a").innerHTML = "<i class='fa fa-times'></i>";
+            }
+            }
+
+            hamburger.addEventListener("click", hamburgerMeny, false);
+        </script>
+    </body>
+
+</html>

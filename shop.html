@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <title>YouzClothes | Shop</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/site.css">
+
+        <!--bibliotek for sosiale medier knapper og hamburgermenyen-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="klær, clothing, store, butikk, t-skjorter">
+        <meta name="description" content="t-skjorter til salg">
+    </head>
+
+    <body>
+        <header>
+            <h1>YouzClothes</h1>
+            <p lang="en">Unique clothing store online</p>
+        </header>
+
+        <nav>
+            <ul class="meny">
+                <li class="liste"><a href="index.html">Hjem</a></li>
+                <li class="liste"><a href="shop.html">Shop</a></li>
+                <li class="liste"><a href="kontakt.html">Kontakt</a></li>
+                <li class="liste"><a href="plan.html">Universell Utforming</a></li>
+                <li class="liste"><a href="seo.html">SEO</a></li>
+                <li class="liste"><a href="wireframe.html">Wireframes</a></li>
+                <li class="hamburger"><a href="#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+            
+            <a href="index.html"><img id="StorLogo" src="../522/img/StorLogo.png" alt="logo til YouzClothes"></a>
+        </nav>
+
+        <main>
+            <h2>T-skjorter</h2>
+            <section class="kontaktprs" tabindex="0">
+                <article>
+                    <h3>CSS og Flexbox T-skjorte</h3>
+                    <img class="tskjorte" src="../522/img/tskjorte1.png" alt="lilla t-skjorte med tekst og bilde av solbriller">
+                    <p>Pris: 199kr</p>
+                    <p>Se produktet <a href="#">her</a>:</p>
+                </article>
+
+                <article>
+                    <h3>In the making T-skjorte</h3>
+                    <img class="tskjorte" src="../522/img/tskjorte2.png" alt="mørkeblå t-skjorte med tekst på framside">
+                    <p>Pris: 149kr</p>
+                    <p>Se produktet <a href="#">her</a>:</p>
+                </article>
+
+                <article>
+                    <h3>HTML, CSS & JavaScript T-skjorte</h3>
+                    <img class="tskjorte" src="../522/img/tskjorte3.png" alt="lyseblå t-skjorte med tekst på armer og helt nederst">
+                    <p>Pris: 249kr</p>
+                    <p>Se produktet <a href="#">her</a>:</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <h3>Kontakt oss:</h3>
+                <p>Kundeservice tlfnr: 88 88 88 88</p>
+                <p>Kundeservice åpningstider: Man-Fre 10:00 - 16:30</p>
+                <p>Postadresse: Adressevei 90E, 1783 Halden, Norge</p>
+            </section>
+                
+            <section>
+                <h3>Sosiale medier:</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </section>
+        </footer>
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const meny = document.querySelector(".meny");
+            const lister = document.querySelectorAll(".liste");
+
+            /*Hamburger meny */
+            function hamburgerMeny() {
+            if (meny.classList.contains("active")) {
+                meny.classList.remove("active");
+                hamburger.querySelector("a").innerHTML = "<i class='fa fa-bars'></i>";
+            } else {
+                meny.classList.add("active");
+                hamburger.querySelector("a").innerHTML = "<i class='fa fa-times'></i>";
+            }
+            }
+
+            hamburger.addEventListener("click", hamburgerMeny, false);
+        </script>
+    </body>
+</html>
+ 

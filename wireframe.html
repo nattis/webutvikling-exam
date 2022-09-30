@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <title>YouzClothes | Wireframe</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/site.css">
+
+        <!--bibliotek for sosiale medier knapper og hamburgermenyen-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="wireframe, skisse, planlegging">
+        <meta name="description" content="wireframe skisser, planlegging av nettside">
+    </head>
+
+    <body>
+        <header>
+            <h1>YouzClothes</h1>
+            <p lang="en">Unique clothing store online</p>
+        </header>
+
+        <nav>
+            <ul class="meny">
+                <li class="liste"><a href="index.html">Hjem</a></li>
+                <li class="liste"><a href="shop.html">Shop</a></li>
+                <li class="liste"><a href="kontakt.html">Kontakt</a></li>
+                <li class="liste"><a href="plan.html">Universell Utforming</a></li>
+                <li class="liste"><a href="seo.html">SEO</a></li>
+                <li class="liste"><a href="wireframe.html">Wireframes</a></li>
+                <li class="hamburger"><a href="#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+            
+            <a href="index.html"><img id="StorLogo" src="../522/img/StorLogo.png" alt="logo til YouzClothes"></a>
+        </nav>
+
+        <main tabindex="0">
+            <section>
+                <h2 class="heading">Skisser over nettsiden</h2>
+                <article>
+                    <h3>Forsidens skisser</h3>
+                    <p>Under ser vi skissen jeg lagde for nettsidens forside. Jeg lagde en for hvordan det kom til å se ut på pc, og en for mobil. </p>
+                    <a href="https://wireframe.cc/1Q1aDs"><img class="skisse" src="../522/img/forside-pc.PNG" alt="skisse av forsidens utseende på pc"></a>
+                    <a href="https://wireframe.cc/sFqiKg"><img class="skisse" src="../522/img/forside-mobil.PNG" alt="skisse av forsidens utseende på mobil"></a>
+                </article>
+
+                <article>
+                    <h3>"Kontakt oss"-sidens skisser</h3>
+                    <p>Videre laget jeg skisse for hvordan jeg ville at "kontakt oss"-siden skulle se ut. Her laget jeg også en skisse for mobil og en for pc.</p>
+                    <a href="https://wireframe.cc/ulMewT"><img class="skisse" src="../522/img/kontakt-pc.PNG" alt="skisse av kontakt oss siden på pc"></a>
+                    <a href="https://wireframe.cc/kmP2PP"><img class="skisse" src="../522/img/kontakt-mobil.PNG" alt="skisse av kontakt oss siden på mobil"></a>
+                </article>
+
+                <article>
+                    <h3>Kategorisiden skisser</h3>
+                    <p>Det siste jeg laget skisse over var kategorisiden for t-skjortene som butikken selger. Da laget jeg som tidligere, en skisse for mobil og en for pc. </p>
+                    <a href="https://wireframe.cc/jB6Qft"><img class="skisse" src="../522/img/tskjorte-pc.PNG" alt="skisse av t-skjorte siden på pc"></a>
+                    <a href="https://wireframe.cc/QMBzij"><img class="skisse" src="../522/img/tskjorte-mobil.PNG" alt="skisse av t-skjorte siden på mobil"></a>
+                </article>
+
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <h3>Kontakt oss:</h3>
+                <p>Kundeservice tlfnr: 88 88 88 88</p>
+                <p>Kundeservice åpningstider: Man-Fre 10:00 - 16:30</p>
+                <p>Postadresse: Adressevei 90E, 1783 Halden, Norge</p>
+            </section>
+                
+            <section>
+                <h3>Sosiale medier:</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </section>
+        </footer>
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const meny = document.querySelector(".meny");
+            const lister = document.querySelectorAll(".liste");
+
+            /*Hamburger meny*/
+            function hamburgerMeny() {
+            if (meny.classList.contains("active")) {
+                meny.classList.remove("active");
+                hamburger.querySelector("a").innerHTML = "<i class='fa fa-bars'></i>";
+            } else {
+                meny.classList.add("active");
+                hamburger.querySelector("a").innerHTML = "<i class='fa fa-times'></i>";
+            }
+            }
+
+            hamburger.addEventListener("click", hamburgerMeny, false);
+        </script>
+    </body>
+</html>
